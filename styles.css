@@ -48,9 +48,10 @@ nav ul li a:hover {
     padding-top: 100px; /* Adjust this value as needed */
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .welcome-message {
@@ -60,6 +61,9 @@ nav ul li a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a background color for better readability */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
 }
 
 .welcome-message h1 {
