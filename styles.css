@@ -52,6 +52,24 @@ nav ul li a:hover {
     height: auto;
 }
 
+.welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome-message h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 .content {
     padding: 60px 20px;
     text-align: center;
@@ -66,17 +84,41 @@ nav ul li a:hover {
     color: #fff;
 }
 
-.services h2, .services p, .services ul {
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
     color: #fff;
 }
 
-.services ul {
-    list-style: none;
-    padding: 0;
+.services-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-.services ul li {
-    margin: 10px 0;
+.services-list h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.services-list p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 footer {
