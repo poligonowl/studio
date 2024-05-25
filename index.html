@@ -1,62 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PoligonOwl Graphic Design Studio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="fwww.png" alt="PoligonOwl Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="banner" id="home">
-        <img src="κξξξ.png" alt="Banner Image">
-        <div class="welcome-message">
-            <h1>Welcome to PoligonOwl Graphic Design Studio!</h1>
-            <p>We are a creative team dedicated to bringing your vision to life through innovative design. From branding to digital illustrations, we deliver exceptional results that tell your unique story. Let's create something beautiful together.</p>
-        </div>
-    </section>
-    <section class="content" id="about">
-        <h1>Welcome to PoligonOwl</h1>
-        <p>Your creative partner in graphic design. Let us bring your ideas to life with stunning visuals and innovative designs.</p>
-    </section>
-    <section class="content services" id="services">
-        <h1>Our Services</h1>
-        <div class="services-list">
-            <h2>Branding & Logo Design</h2>
-            <p>Establish a strong identity with captivating logos and brand assets.</p>
-            <h2>Digital Illustrations</h2>
-            <p>Bring your ideas to life with stunning digital illustrations tailored to your needs.</p>
-            <h2>Print Media Design</h2>
-            <p>From business cards to brochures, we design print materials that make an impact.</p>
-            <h2>Social Media Graphics</h2>
-            <p>Elevate your social media presence with eye-catching graphics and designs optimized for various platforms.</p>
-            <h2>Flyer Design</h2>
-            <p>Spread your message effectively with professionally crafted flyers designed to capture attention and drive engagement.</p>
-        </div>
-    </section>
-    <section class="content portfolio" id="portfolio">
-        <h1>Our Portfolio</h1>
-        <p>Check out some of our latest projects on <a href="https://www.artstation.com/sneit" target="_blank">ArtStation</a> and see how we bring ideas to life with our designs.</p>
-    </section>
-    <section class="content contact" id="contact">
-        <h1>Contact Us</h1>
-        <p>Email: <a href="mailto:sneit95@hotmail.gr">sneit95@hotmail.gr</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/sneit_art" target="_blank">@sneit_art</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2024 PoligonOwl Graphic Design Studio. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the width as per your logo size */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Banner styles */
+.banner img {
+    width: 100%;
+}
+
+/* Services section styles */
+.services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.services a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.services a:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+}
