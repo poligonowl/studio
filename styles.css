@@ -60,6 +60,25 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.services {
+    background: url('efeggg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.services h2, .services p, .services ul {
+    color: #fff;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 10px 0;
+}
+
 footer {
     text-align: center;
     padding: 20px;
