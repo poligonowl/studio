@@ -49,6 +49,33 @@ nav ul li a {
     color: #fff;
 }
 
+.services h2 {
+    color: #fff;
+}
+
+.services ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+.portfolio-panel {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.portfolio-panel h2 {
+    margin-bottom: 10px;
+}
+
+.portfolio-panel a {
+    color: #333;
+}
+
 footer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
