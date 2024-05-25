@@ -1,124 +1,90 @@
-body {
+/* Resetting default styles */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('ffge.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
 header {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    height: 60px;
+    width: 100px; /* Adjust the width as per your logo size */
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    list-style-type: none;
 }
 
 nav ul li {
-    margin-left: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #fff;
 }
 
-nav ul li a:hover {
-    color: #007BFF;
-}
-
-.banner {
-    position: relative;
-    text-align: center;
-    color: white;
-    padding-top: 100px; /* Adjust this value as needed */
-}
-
-.banner {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.welcome-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.5); /* Add a background color for better readability */
-    padding: 20px; /* Add padding for spacing */
-    border-radius: 10px; /* Add border radius for rounded corners */
-}
-
-.welcome-message h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.welcome-message p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.content {
-    padding: 60px 20px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.services h1,
-.portfolio h1,
-.contact h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.services-list {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.services-list h2 {
-    font-size: 24px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-
-.services-list p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.contact p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
+/* Banner styles */
+.banner img {
     width: 100%;
-    bottom: 0;
+}
+
+/* Services section styles */
+.services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.services a {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.services a:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fff;
 }
