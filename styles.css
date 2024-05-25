@@ -58,16 +58,19 @@ nav ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 80%;
 }
 
 .welcome-message h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .welcome-message p {
     font-size: 18px;
     line-height: 1.6;
+    color: #fff;
 }
 
 .content {
@@ -78,16 +81,11 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.services {
-    background: url('efeggg.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-}
-
-.services h1 {
+.services h1,
+.portfolio h1,
+.contact h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 .services-list {
@@ -105,15 +103,6 @@ nav ul li a:hover {
 .services-list p {
     font-size: 16px;
     line-height: 1.6;
-}
-
-.contact {
-    background: rgba(255, 255, 255, 0.9);
-}
-
-.contact h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
 }
 
 .contact p {
