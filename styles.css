@@ -45,6 +45,7 @@ nav ul li a:hover {
     position: relative;
     text-align: center;
     color: white;
+    padding-top: 100px; /* Adjust this value as needed */
 }
 
 .banner img {
@@ -64,13 +65,11 @@ nav ul li a:hover {
 .welcome-message h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 .welcome-message p {
     font-size: 18px;
     line-height: 1.6;
-    color: #fff;
 }
 
 .content {
