@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    AOS.init();
+
     // Smooth scrolling with easing
     const navLinks = document.querySelectorAll('nav ul li a');
     navLinks.forEach(link => {
@@ -31,6 +33,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     sections.forEach(section => {
-        observer.observe(section);
-    });
-});
+        observer.observe
