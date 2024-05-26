@@ -18,6 +18,10 @@ header {
     background: #333;
     color: white;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo {
@@ -53,9 +57,10 @@ header ul li a:hover {
 /* Welcome section styles */
 .welcome {
     text-align: center;
-    padding: 50px 20px;
+    padding: 150px 20px 50px; /* Adjusted for fixed header */
     background: url('ffge.png') no-repeat center center/cover;
     color: white;
+    position: relative;
 }
 
 .banner img {
