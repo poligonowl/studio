@@ -58,23 +58,20 @@ section {
 
 .services {
     position: relative;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    display: inline-block;
-    padding: 20px;
-    width: 80%;
-    margin: auto;
+    background: url('efeggg.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
 }
 
-.services-background img {
-    width: 100%;
-    height: auto;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.services-content {
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 20px;
     border-radius: 10px;
+    width: 80%;
+    margin: auto;
 }
 
 .portfolio-link {
