@@ -7,54 +7,8 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo {
+header .logo {
     height: 60px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px 10px;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-nav ul li a.active {
-    color: #fff;
-    background-color: #333;
-    border-radius: 5px;
-}
-
-section {
-    padding: 100px 20px;
-    margin-top: 80px;
-    text-align: center;
 }
 
 .welcome-section {
@@ -64,6 +18,7 @@ section {
     background-size: cover;
     background-position: center;
     color: #fff;
+    text-align: center;
 }
 
 .banner-container {
@@ -89,12 +44,13 @@ section {
 }
 
 .services-section {
-    padding: 60px 20px;
+    padding: 60px 0;
     background-image: url('efeggg.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     color: #000;
+    text-align: center;
 }
 
 .services-content {
@@ -124,8 +80,9 @@ section {
 }
 
 .portfolio-section {
-    padding: 60px 20px;
+    padding: 60px 0;
     background: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
 .portfolio-section h2 {
@@ -142,8 +99,9 @@ section {
 }
 
 .contact-section {
-    padding: 60px 20px;
+    padding: 60px 0;
     background: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
 .contact-section h2 {
@@ -161,28 +119,11 @@ section {
 
 footer {
     padding: 20px;
-    text-align: center;
     background: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 
 footer p {
     margin: 0;
     font-size: 1em;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
