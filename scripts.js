@@ -11,18 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Image carousel for the banner
-    const bannerImages = ['κξξξ.png', 'another-banner-image.png']; // Add paths to more banner images
-    let currentBannerIndex = 0;
-    const bannerElement = document.querySelector('.banner img');
-    
-    function changeBannerImage() {
-        currentBannerIndex = (currentBannerIndex + 1) % bannerImages.length;
-        bannerElement.src = bannerImages[currentBannerIndex];
-    }
-
-    setInterval(changeBannerImage, 5000); // Change image every 5 seconds
-
     // Animations for sections when they come into view
     const sections = document.querySelectorAll('section');
     const options = {
