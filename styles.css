@@ -45,6 +45,14 @@ nav ul li a {
     color: #333;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a.active {
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
 }
 
 section {
@@ -61,6 +69,7 @@ section {
 
 .banner {
     max-width: 100%;
+    width: 110%; /* Make the banner a little wider */
     height: auto;
     margin-bottom: 20px;
 }
