@@ -5,6 +5,9 @@ body {
     padding: 0;
     color: #333;
     overflow-x: hidden;
+    perspective: 1px;
+    perspective-origin: 0 0;
+    height: 100%;
 }
 
 header {
@@ -56,14 +59,17 @@ section {
     padding: 100px 20px;
     margin-top: 80px;
     text-align: center;
-    background-attachment: fixed;
     background-size: cover;
+    transform: translateZ(-1px) scale(2);
+    height: 100vh;
 }
 
 .welcome-section {
     padding-top: 120px;
     background-image: url('ffge.png'); /* Parallax background */
     animation: fadeIn 2s;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .banner {
@@ -88,6 +94,7 @@ section {
     padding: 60px 20px;
     background-image: url('efeggg.png'); /* Parallax background */
     background-attachment: fixed;
+    background-size: cover;
     position: relative;
     color: #000;
     animation: fadeIn 2s;
