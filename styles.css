@@ -45,6 +45,11 @@ nav ul li a {
     color: #333;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
 }
 
 section {
@@ -76,15 +81,13 @@ section {
     margin-bottom: 0;
 }
 
-.services-section {
+.services-section, .portfolio-section, .contact-section {
     padding: 60px 20px;
     background: rgba(255, 255, 255, 0.9);
-    position: relative;
-    color: #000;
     animation: fadeIn 2s;
 }
 
-.services-bg {
+.services-section .services-bg, .portfolio-section .services-bg, .contact-section .services-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,68 +98,40 @@ section {
     z-index: -1;
 }
 
-.services-content {
+.section-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.services-content h2 {
+.section-content h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.services-content p {
+.section-content p, .section-content ul, .section-content a {
     font-size: 1.2em;
-    margin-bottom: 20px;
 }
 
-.services-content ul {
+.section-content ul {
     list-style: none;
     padding: 0;
 }
 
-.services-content ul li {
+.section-content ul li {
     margin: 10px 0;
     font-size: 1.1em;
 }
 
-.portfolio-section {
-    padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    animation: fadeIn 2s;
-}
-
-.portfolio-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.portfolio-section a {
+.portfolio-section a, .contact-section a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
-.contact-section {
-    padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.8);
-    animation: fadeIn 2s;
-}
-
-.contact-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.contact-section a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
+.portfolio-section a:hover, .contact-section a:hover {
+    color: #007BFF;
 }
 
 footer {
@@ -185,5 +160,25 @@ footer p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 80px 10px;
+    }
+
+    .welcome-text h1 {
+        font-size: 2em;
+    }
+
+    .welcome-text p, .section-content p, .section-content ul, .section-content a {
+        font-size: 1em;
     }
 }
