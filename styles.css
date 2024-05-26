@@ -1,90 +1,99 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
     background-color: #333;
     color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.logo img {
-    width: 100px; /* Adjust as needed */
+header .logo img {
+    width: 150px;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
 }
 
-.banner {
+.hero {
     position: relative;
     text-align: center;
+    color: white;
+    margin-top: 70px;
 }
 
-.banner img {
+.hero img {
     width: 100%;
     height: auto;
 }
 
-.welcome-panel {
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    max-width: 80%;
+}
+
+.services, .portfolio, .contact {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .services {
     background-image: url('efeggg.png');
     background-size: cover;
     background-attachment: fixed;
-    padding: 50px 20px;
     color: #fff;
 }
 
-.service-panel {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
+.services .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services .service-item {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.contact .container {
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
-}
-
-.contact {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact-info {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact-info a {
-    color: #333;
-    text-decoration: none;
 }
 
 footer {
@@ -92,4 +101,11 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
